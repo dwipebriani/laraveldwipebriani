@@ -15,7 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+<<<<<<< HEAD
 Route::group(['middleware'=>['auth']], function(){
+=======
+>>>>>>> 3feb4755e00a71ed519f45f297a511300eb28101
 	Route::prefix('admin')->group(function(){
 	Route::get('/', function(){
 		return view('admin.pages.dashboard');
@@ -23,8 +26,11 @@ Route::group(['middleware'=>['auth']], function(){
 });
 
 
+<<<<<<< HEAD
 });
 
+=======
+>>>>>>> 3feb4755e00a71ed519f45f297a511300eb28101
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
