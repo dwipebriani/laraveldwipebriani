@@ -55,8 +55,11 @@
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
+<<<<<<< HEAD
                                             document.getElementById('logout-form').submit();">
 
+=======
+>>>>>>> tokap5
                                                      document.getElementById('logout-form').submit();">
                                             Logout
                                         </a>

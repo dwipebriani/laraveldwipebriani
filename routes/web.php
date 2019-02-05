@@ -16,9 +16,13 @@ Route::get('/', function () {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Route::group(['middleware'=>['auth']], function(){
 =======
 >>>>>>> 3feb4755e00a71ed519f45f297a511300eb28101
+=======
+Route::group(['middleware'=>['auth']], function(){
+>>>>>>> tokap5
 	Route::prefix('admin')->group(function(){
 	Route::get('/', function(){
 		return view('admin.pages.dashboard');
@@ -27,10 +31,15 @@ Route::group(['middleware'=>['auth']], function(){
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 });
 
 =======
 >>>>>>> 3feb4755e00a71ed519f45f297a511300eb28101
+=======
+});
+
+>>>>>>> tokap5
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

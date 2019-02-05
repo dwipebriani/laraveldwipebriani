@@ -35,8 +35,11 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+<<<<<<< HEAD
     
    
+=======
+>>>>>>> tokap5
     }
     protected function redirectTo()
     {
