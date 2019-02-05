@@ -56,10 +56,13 @@
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             document.getElementById('logout-form').submit();">
 
 =======
 >>>>>>> tokap5
+=======
+>>>>>>> tokap6
                                                      document.getElementById('logout-form').submit();">
                                             Logout
                                         </a>
