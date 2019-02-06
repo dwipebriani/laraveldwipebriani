@@ -29,6 +29,7 @@ class ResetPasswordController extends Controller
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     protected $redirectTo = '/home';
 >>>>>>> 3feb4755e00a71ed519f45f297a511300eb28101
@@ -36,6 +37,8 @@ class ResetPasswordController extends Controller
 >>>>>>> tokap5
 =======
 >>>>>>> tokap6
+=======
+>>>>>>> tokap7
 
     /**
      * Create a new controller instance.
@@ -47,11 +50,14 @@ class ResetPasswordController extends Controller
         $this->middleware('guest');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    
 =======
 >>>>>>> tokap5
 =======
 >>>>>>> tokap6
+=======
+>>>>>>> tokap7
     }
     protected function redirectTo()
     {

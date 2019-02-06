@@ -57,12 +57,15 @@
                                             onclick="event.preventDefault();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             document.getElementById('logout-form').submit();">
 
 =======
 >>>>>>> tokap5
 =======
 >>>>>>> tokap6
+=======
+>>>>>>> tokap7
                                                      document.getElementById('logout-form').submit();">
                                             Logout
                                         </a>

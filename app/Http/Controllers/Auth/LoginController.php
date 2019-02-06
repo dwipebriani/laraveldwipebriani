@@ -37,12 +37,15 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     
    
 =======
 >>>>>>> tokap5
 =======
 >>>>>>> tokap6
+=======
+>>>>>>> tokap7
     }
     protected function redirectTo()
     {

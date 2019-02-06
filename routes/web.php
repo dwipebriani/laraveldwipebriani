@@ -18,6 +18,7 @@ Route::get('/', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Route::group(['middleware'=>['auth']], function(){
 =======
 >>>>>>> 3feb4755e00a71ed519f45f297a511300eb28101
@@ -27,10 +28,14 @@ Route::group(['middleware'=>['auth']], function(){
 =======
 Route::group(['middleware'=>['auth']], function(){
 >>>>>>> tokap6
+=======
+Route::group(['middleware'=>['auth']], function(){
+>>>>>>> tokap7
 	Route::prefix('admin')->group(function(){
 	Route::get('/', function(){
 		return view('admin.pages.dashboard');
 	})->name('admin.home');
+<<<<<<< HEAD
 <<<<<<< HEAD
 });
 
@@ -52,6 +57,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 	Route::prefix('user')->group(function(){
 		Route::get('/setting','UserSettingController@form')->name('admin.user.setting');
+=======
+
+	Route::prefix('user')->group(function(){
+		Route::get('/setting','UserSettingController@form')->name('admin.user.setting');
+		Route::post('/setting','UserSettingController@update');
+>>>>>>> tokap7
 	});
 
 });
@@ -60,4 +71,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 
+<<<<<<< HEAD
 >>>>>>> tokap6
+=======
+>>>>>>> tokap7
