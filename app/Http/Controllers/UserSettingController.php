@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use App\User;
 use Auth;
@@ -13,11 +14,16 @@ use Auth;
 use App\User;
 use Auth;
 >>>>>>> tokap8
+=======
+use App\User;
+use Auth;
+>>>>>>> tokap9
 
 class UserSettingController extends Controller
 {
 	public function form()
 	{
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		return view('admin.pages.user.setting');
@@ -26,10 +32,13 @@ class UserSettingController extends Controller
 =======
 =======
 >>>>>>> tokap8
+=======
+>>>>>>> tokap9
 		$data = User::where('id',Auth::id())->first();
 
 		return view('admin.pages.user.setting',['dt'=>$data]);
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
    public function update()
    {
@@ -37,6 +46,8 @@ class UserSettingController extends Controller
    }
 >>>>>>> tokap7
 =======
+=======
+>>>>>>> tokap9
    public function update(Request $req)
    {
    		$id = Auth::id();
@@ -47,7 +58,34 @@ class UserSettingController extends Controller
    			'repassword'=>'same:password',
 
    		])->validate();
+<<<<<<< HEAD
    	return "Fungsi Update";
    }
 >>>>>>> tokap8
 }
+=======
+
+         if(!empty($req->password)){
+            $field = [
+               'name'=>$req->name,
+               'email'=>$req->email,
+               'password'=>bcrypt($req->password),
+            ];
+         }else{
+             $field = [
+               'name'=>$req->name,
+               'email'=>$req->email,
+
+            ];
+         }
+         $result = User::where('id',$id)->update($field);
+         if($result){
+            return back()->with('result','success');
+         }else{
+
+         
+   	return back()->with('result','fail');
+   }
+}
+}
+>>>>>>> tokap9

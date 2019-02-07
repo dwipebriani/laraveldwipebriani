@@ -20,6 +20,7 @@ Route::get('/', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Route::group(['middleware'=>['auth']], function(){
 =======
 >>>>>>> 3feb4755e00a71ed519f45f297a511300eb28101
@@ -35,10 +36,14 @@ Route::group(['middleware'=>['auth']], function(){
 =======
 Route::group(['middleware'=>['auth']], function(){
 >>>>>>> tokap8
+=======
+Route::group(['middleware'=>['auth']], function(){
+>>>>>>> tokap9
 	Route::prefix('admin')->group(function(){
 	Route::get('/', function(){
 		return view('admin.pages.dashboard');
 	})->name('admin.home');
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -65,14 +70,19 @@ Route::get('/home', 'HomeController@index')->name('home');
 =======
 =======
 >>>>>>> tokap8
+=======
+>>>>>>> tokap9
 
 	Route::prefix('user')->group(function(){
 		Route::get('/setting','UserSettingController@form')->name('admin.user.setting');
 		Route::post('/setting','UserSettingController@update');
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap7
 =======
 >>>>>>> tokap8
+=======
+>>>>>>> tokap9
 	});
 
 });
@@ -83,8 +93,11 @@ Auth::routes();
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap6
 =======
 >>>>>>> tokap7
 =======
 >>>>>>> tokap8
+=======
+>>>>>>> tokap9

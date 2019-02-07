@@ -1,6 +1,7 @@
 @extends('admin.main')
 @section('title','User Setting')
 @section('content')
+<<<<<<< HEAD
 <h1>User Setting</h1>
 <hr>
 <<<<<<< HEAD
@@ -8,6 +9,24 @@
 =======
 =======
 >>>>>>> tokap8
+=======
+<h1>User</h1>
+<hr>
+
+@if(session('result') == 'success')
+<div class="alert alert-success alert-dismissiable fade show">
+	<strong>Update !</strong> Berhasil diupdate.
+	<button type="button" class="close" data-dismiss="alert">&times;
+	</button>
+</div>
+@elseif(session('result') == 'fail')
+<div class="alert alert-danger alert-dismissiable fade show">
+	<strong>Failed !</strong> Gagal diupdate.
+	<button type="button" class="close" data-dismiss="alert">&times;
+	</button>
+</div>
+@endif
+>>>>>>> tokap9
 <div class="row">
 	<div class="col-md-6">
 		<form method="post" action="{{ route('admin.user.setting') }}">
@@ -17,6 +36,7 @@
 					{{ csrf_field() }}
 
 					<div class="form-group form-label-group">
+<<<<<<< HEAD
 <<<<<<< HEAD
 						<input type="text" name="name" class="form-control" value="{{ old('name',$dt->name) }}" id="iName" placeholder="Name" required>
 						<label for="iName">Name</label>
@@ -30,6 +50,8 @@
 
 					<div class="form-group form-label-group"> <input type="password" name="password" class="form-control" id="iPassword" placeholder="Password"> <label for="iPassword">Password</label>
 =======
+=======
+>>>>>>> tokap9
 						<input type="text" name="name" class="form-control {{$errors->has('name')?'is-invalid':''}}" value="{{ old('name',$dt->name) }}" id="iName" placeholder="Name" required>
 
 						<label for="iName">Name</label>
@@ -51,17 +73,23 @@
 						@if($errors->has('password'))
 						<div class="invalid-feedback">{{$errors->first('password')}}</div>
 						@endif
+<<<<<<< HEAD
 >>>>>>> tokap8
+=======
+>>>>>>> tokap9
 						<div class="form-text text-muted">
 							<small>Kosongkan Password apabila tidak diubah.</small>
 						</div>
 					</div>
+<<<<<<< HEAD
 <<<<<<< HEAD
 					<div class="form-group form-label-group"> <input type="password" name="repassword" class="form-control" id="iRePassword" placeholder="Re Password">
 						<label for="iRePassword">Re Password</label>
 					</div>
 				</div>
 =======
+=======
+>>>>>>> tokap9
 					
 					<div class="form-group form-label-group"> <input type="password" name="repassword" class="form-control {{$errors->has('repassword')?'is-invalid':''}}" id="iRePassword" placeholder="Re Password">
 						<label for="iRePassword">Re Password</label>
@@ -70,7 +98,10 @@
 						@endif
 					</div>
 			
+<<<<<<< HEAD
 >>>>>>> tokap8
+=======
+>>>>>>> tokap9
 				<div class="card-footer">
 					<button type="submit" class="btn btn-primary shadow-sm">Update</button>
 				</div>
@@ -81,7 +112,10 @@
 	</div>
 </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap7
 =======
 >>>>>>> tokap8
+=======
+>>>>>>> tokap9
 @endsection
