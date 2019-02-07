@@ -30,6 +30,7 @@ class ResetPasswordController extends Controller
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     protected $redirectTo = '/home';
 >>>>>>> 3feb4755e00a71ed519f45f297a511300eb28101
@@ -39,6 +40,8 @@ class ResetPasswordController extends Controller
 >>>>>>> tokap6
 =======
 >>>>>>> tokap7
+=======
+>>>>>>> tokap8
 
     /**
      * Create a new controller instance.
@@ -51,6 +54,7 @@ class ResetPasswordController extends Controller
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    
 =======
 >>>>>>> tokap5
@@ -58,6 +62,8 @@ class ResetPasswordController extends Controller
 >>>>>>> tokap6
 =======
 >>>>>>> tokap7
+=======
+>>>>>>> tokap8
     }
     protected function redirectTo()
     {
