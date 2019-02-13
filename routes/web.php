@@ -23,6 +23,7 @@ Route::get('/', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Route::group(['middleware'=>['auth']], function(){
 =======
 >>>>>>> 3feb4755e00a71ed519f45f297a511300eb28101
@@ -47,10 +48,14 @@ Route::group(['middleware'=>['auth']], function(){
 =======
 Route::group(['middleware'=>['auth']], function(){
 >>>>>>> tokap11
+=======
+Route::group(['middleware'=>['auth']], function(){
+>>>>>>> tokap12
 	Route::prefix('admin')->group(function(){
 	Route::get('/', function(){
 		return view('admin.pages.dashboard');
 	})->name('admin.home');
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -107,6 +112,20 @@ Route::get('/home', 'HomeController@index')->name('home');
 		Route::get('/setting','UserSettingController@form')->name('admin.user.setting');
 		Route::post('/setting','UserSettingController@update');
 >>>>>>> tokap11
+=======
+
+	Route::prefix('user')->group(function() {
+		Route::get('/','UserController@daftar')->name('admin.user')->middleware('akses.admin');
+
+		route::get('/add','UserController@add')->name('admin.user.add')->middleware('akses.admin');
+		route::post('/add','UserController@save')->middleware('akses.admin');
+
+
+
+
+		Route::get('/setting','UserSettingController@form')->name('admin.user.setting');
+		Route::post('/setting','UserSettingController@update');
+>>>>>>> tokap12
 	});
 
 });
@@ -115,6 +134,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -131,3 +151,5 @@ Auth::routes();
 >>>>>>> tokap10
 =======
 >>>>>>> tokap11
+=======
+>>>>>>> tokap12
