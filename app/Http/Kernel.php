@@ -58,11 +58,15 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         'akses.admin'=>\App\Http\Middleware\AksesAdmin::class,
 >>>>>>> tokap11
 =======
         'akses.admin'=>\App\Http\Middleware\AksesAdmin::class,
 >>>>>>> tokap12
+=======
+        'akses.admin'=>\App\Http\Middleware\AksesAdmin::class,
+>>>>>>> tokap13
     ];
 }

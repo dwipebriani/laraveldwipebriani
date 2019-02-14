@@ -14,14 +14,31 @@ class UserController extends Controller
     	return view('admin.pages.user.daftar',['data'=>$data]);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> tokap13
     public function add()
     {
     	return view('admin.pages.user.add');
     }
     public function save(Request $req)
     {
+<<<<<<< HEAD
     	return 'Fungsi Save';
     }
 >>>>>>> tokap12
+=======
+        \Validator::make($req->all(),[
+                'name'=>'required|between:3,100',
+                'email'=>'required|unique:users,email',
+                'password'=>'required|min:6',
+                'repassword'=>'required|same:password',
+                'akses'=>'required',
+
+        ])->validate();
+        
+    	return 'Fungsi Save';
+    }
+>>>>>>> tokap13
 }

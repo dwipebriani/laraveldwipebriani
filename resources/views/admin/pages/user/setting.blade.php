@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <h1>User Setting</h1>
 <hr>
 <<<<<<< HEAD
@@ -19,6 +20,8 @@
 >>>>>>> tokap11
 =======
 >>>>>>> tokap12
+=======
+>>>>>>> tokap13
 <h1>User</h1>
 <hr>
 
@@ -38,6 +41,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap9
 =======
 >>>>>>> tokap10
@@ -45,6 +49,8 @@
 >>>>>>> tokap11
 =======
 >>>>>>> tokap12
+=======
+>>>>>>> tokap13
 <div class="row">
 	<div class="col-md-6">
 		<form method="post" action="{{ route('admin.user.setting') }}">
@@ -54,6 +60,7 @@
 					{{ csrf_field() }}
 
 					<div class="form-group form-label-group">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -79,6 +86,8 @@
 >>>>>>> tokap11
 =======
 >>>>>>> tokap12
+=======
+>>>>>>> tokap13
 						<input type="text" name="name" class="form-control {{$errors->has('name')?'is-invalid':''}}" value="{{ old('name',$dt->name) }}" id="iName" placeholder="Name" required>
 
 						<label for="iName">Name</label>
@@ -104,6 +113,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap8
 =======
 >>>>>>> tokap9
@@ -113,10 +123,13 @@
 >>>>>>> tokap11
 =======
 >>>>>>> tokap12
+=======
+>>>>>>> tokap13
 						<div class="form-text text-muted">
 							<small>Kosongkan Password apabila tidak diubah.</small>
 						</div>
 					</div>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -135,6 +148,8 @@
 >>>>>>> tokap11
 =======
 >>>>>>> tokap12
+=======
+>>>>>>> tokap13
 					
 					<div class="form-group form-label-group"> <input type="password" name="repassword" class="form-control {{$errors->has('repassword')?'is-invalid':''}}" id="iRePassword" placeholder="Re Password">
 						<label for="iRePassword">Re Password</label>
@@ -143,6 +158,7 @@
 						@endif
 					</div>
 			
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -156,6 +172,8 @@
 >>>>>>> tokap11
 =======
 >>>>>>> tokap12
+=======
+>>>>>>> tokap13
 				<div class="card-footer">
 					<button type="submit" class="btn btn-primary shadow-sm">Update</button>
 				</div>
@@ -165,6 +183,7 @@
 
 	</div>
 </div>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -181,4 +200,6 @@
 >>>>>>> tokap11
 =======
 >>>>>>> tokap12
+=======
+>>>>>>> tokap13
 @endsection
