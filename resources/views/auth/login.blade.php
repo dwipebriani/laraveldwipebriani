@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @extends('layouts.app')
 
 @section('content')
@@ -93,6 +94,8 @@
 >>>>>>> tokap12
 =======
 >>>>>>> tokap13
+=======
+>>>>>>> tokap14
       @extends('auth.main')
      @section('title','Login')
      @section('content')
@@ -148,6 +151,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 >>>>>>> tokap5
 =======
@@ -174,3 +178,6 @@
 =======
     
 >>>>>>> tokap13
+=======
+    
+>>>>>>> tokap14

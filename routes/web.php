@@ -25,6 +25,7 @@ Route::get('/', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Route::group(['middleware'=>['auth']], function(){
 =======
 >>>>>>> 3feb4755e00a71ed519f45f297a511300eb28101
@@ -55,10 +56,14 @@ Route::group(['middleware'=>['auth']], function(){
 =======
 Route::group(['middleware'=>['auth']], function(){
 >>>>>>> tokap13
+=======
+Route::group(['middleware'=>['auth']], function(){
+>>>>>>> tokap14
 	Route::prefix('admin')->group(function(){
 	Route::get('/', function(){
 		return view('admin.pages.dashboard');
 	})->name('admin.home');
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -120,6 +125,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 =======
 =======
 >>>>>>> tokap13
+=======
+>>>>>>> tokap14
 
 	Route::prefix('user')->group(function() {
 		Route::get('/','UserController@daftar')->name('admin.user')->middleware('akses.admin');
@@ -133,9 +140,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 		Route::get('/setting','UserSettingController@form')->name('admin.user.setting');
 		Route::post('/setting','UserSettingController@update');
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap12
 =======
 >>>>>>> tokap13
+=======
+>>>>>>> tokap14
 	});
 
 });
@@ -143,6 +153,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -166,3 +177,7 @@ Auth::routes();
 >>>>>>> tokap12
 =======
 >>>>>>> tokap13
+=======
+Route::any('register', function(){ return abort(404); });
+
+>>>>>>> tokap14
