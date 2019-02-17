@@ -4,6 +4,7 @@
 <h1>User</h1>
 <hr>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="row">
 	<div class="col-md-6 mb-3">
 <<<<<<< HEAD
@@ -16,6 +17,8 @@
 		<a href="{{ route('admin.user.add') }}" class="btn btn-primary">[+] Tambah</a>
 >>>>>>> tokap13
 =======
+=======
+>>>>>>> tokap15
 
 @if(session('result') == 'success')
 <div class="alert alert-success alert-dismissible fade show">
@@ -30,7 +33,10 @@
 <div class="row">
 	<div class="col-md-6 mb-3">
 		<a href="{{ route('admin.user.add') }}" class="btn btn-primary">[+] Tambah</a>
+<<<<<<< HEAD
 >>>>>>> tokap14
+=======
+>>>>>>> tokap15
 	</div>
 
 	<div class="col-md-6 mb-3">
@@ -56,6 +62,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<th>Name</th><th>Email</th><th>&nbsp;</th>
 =======
 		<th>Name</th><th>Email</th><th>Akses</th><th>&nbsp;</th>
@@ -69,11 +76,15 @@
 =======
 		<th>Name</th><th>Email</th><th>Akses</th><th>&nbsp;</th>
 >>>>>>> tokap14
+=======
+		<th>Name</th><th>Email</th><th>Akses</th><th>&nbsp;</th>
+>>>>>>> tokap15
 	</tr>
 	@foreach($data as $dt)
 	<tr>
 			<td>{{ $dt->name }}</td>
 			<td>{{ $dt->email }}</td>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -92,6 +103,11 @@
 >>>>>>> tokap14
 			<td>
 				<a href="#" class="btn btn-success btn-sm">
+=======
+			<td>{{ $dt->akses }}</td>
+			<td>
+				<a href="{{ route('admin.user.edit',['id'=>$dt->id]) }}" class="btn btn-success btn-sm">
+>>>>>>> tokap15
 					<i class="fa fa-w fa-edit"></i>
 				</a>
 				@if($dt->id != Auth::id() )

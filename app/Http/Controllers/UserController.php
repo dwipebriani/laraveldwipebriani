@@ -16,11 +16,14 @@ class UserController extends Controller
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> tokap13
 =======
 >>>>>>> tokap14
+=======
+>>>>>>> tokap15
     public function add()
     {
     	return view('admin.pages.user.add');
@@ -29,12 +32,15 @@ class UserController extends Controller
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     	return 'Fungsi Save';
     }
 >>>>>>> tokap12
 =======
 =======
 >>>>>>> tokap14
+=======
+>>>>>>> tokap15
         \Validator::make($req->all(),[
                 'name'=>'required|between:3,100',
                 'email'=>'required|unique:users,email',
@@ -45,10 +51,13 @@ class UserController extends Controller
         ])->validate();
         
 <<<<<<< HEAD
+<<<<<<< HEAD
     	return 'Fungsi Save';
     }
 >>>>>>> tokap13
 =======
+=======
+>>>>>>> tokap15
     	$result = new User;
         $result->name = $req->name;
         $result->email = $req->email;
@@ -61,6 +70,7 @@ class UserController extends Controller
             return back()->with('result','fail')->withInput();
           }
 
+<<<<<<< HEAD
 
 
 
@@ -69,3 +79,17 @@ class UserController extends Controller
 
 >>>>>>> tokap14
 }
+=======
+}
+public function edit($id)
+    {
+    $data = User::where('id',$id)->first();
+    return view('admin.pages.user.edit',['rc'=>$data]);
+}
+
+public function update(Request $req)
+{
+    return 'Fungsi Update';
+}
+}
+>>>>>>> tokap15

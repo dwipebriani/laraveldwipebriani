@@ -79,6 +79,7 @@ class RegisterController extends Controller
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> tokap5
 =======
@@ -99,10 +100,13 @@ class RegisterController extends Controller
 >>>>>>> tokap13
 =======
 >>>>>>> tokap14
+=======
+>>>>>>> tokap15
     protected function redirectTo()
     {
        return route('admin.home'); 
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -136,4 +140,6 @@ class RegisterController extends Controller
 >>>>>>> tokap13
 =======
 >>>>>>> tokap14
+=======
+>>>>>>> tokap15
 }

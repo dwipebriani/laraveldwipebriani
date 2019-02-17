@@ -1,158 +1,72 @@
 @extends('admin.main')
-@section('title','User Tambah')
+@section('title','User Edit')
 @section('content')
-<h1>User <small class="text-muted">Tambah</small></h1>
+<h1>User <small class="text-muted">Edit</small></h1>
 <hr>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> tokap15
 @if(session('result') == 'fail')
 <div class="alert alert-danger alert-dismissible fade show">
-	<strong>Failed!</strong> Gagal disimpan.
+	<strong>Failed!</strong> Gagal diupdate.
 	<button type="button" class="close" data-dismiss="alert">
 		&times;
 	</button>
 </div>
 @endif
 
-<<<<<<< HEAD
->>>>>>> tokap14
-=======
->>>>>>> tokap15
 <div class="row">
 	<div class="col-md-6">
-		<form method="POST" action="{{ route('admin.user.add') }}">
+		<form method="POST" action="{{ route('admin.user.edit',['id'=>$rc->id]) }}">
 			{{ csrf_field() }}
 			<div class="card">
 				<div class="card-header">
-					<h5>Buat User Baru</h5>
+					<h5>Edit Data User </h5>
 				</div><!--End Card Header-->
 				<div class="card-body">
 					
 					<div class="form-group form-label-group">
 						<input type="text" name="name"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-						class="form-control"
-						value="{{ old('name') }}"
-						id="iName" placeholder="Name" required>
-						<label for="iName">Name</label>
-=======
-=======
->>>>>>> tokap14
-=======
->>>>>>> tokap15
 						class="form-control {{ $errors->has('name')?'is-invalid':''  }}"
-						value="{{ old('name') }}"
+						value="{{ old('name',$rc->name) }}"
 						id="iName" placeholder="Name" required>
 						<label for="iName">Name</label>
 						@if($errors->has('name'))
 						<div class="invalid-feedback">{{ $errors->first('name') }}</div>
 						@endif
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> tokap13
-=======
->>>>>>> tokap14
-=======
->>>>>>> tokap15
 					</div><!-- End Form Group-->
 
 
 
 					<div class="form-group form-label-group">
 						<input type="email" name="email"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-						class="form-control"
-						value="{{ old('email') }}"
-						id="iEmail" placeholder="Email" required>
-						<label for="iEmail">Email</label>
-=======
-=======
->>>>>>> tokap14
-=======
->>>>>>> tokap15
 						class="form-control {{ $errors->has('name')?'is-invalid':''  }}"
-						value="{{ old('email') }}"
+						value="{{ old('email',$rc->email) }}"
 						id="iEmail" placeholder="Email" required>
 						<label for="iEmail">Email</label>
 						@if($errors->has('email'))
 						<div class="invalid-feedback">{{ $errors->first('email') }}</div>
 						@endif
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> tokap13
-=======
->>>>>>> tokap14
-=======
->>>>>>> tokap15
 					</div><!-- End Form Group-->
 
 
 					<div class="form-group form-label-group">
 						<input type="password" name="password"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-						class="form-control"
-						value="{{ old('password') }}"
-						id="iPassword" placeholder="Password" required>
-						<label for="iPassword">Password</label>
-=======
-=======
->>>>>>> tokap14
-=======
->>>>>>> tokap15
 						class="form-control {{ $errors->has('password')?'is-invalid':''  }}"
 						
-						id="iPassword" placeholder="Password" required>
+						id="iPassword" placeholder="Password">
 						<label for="iPassword">Password</label>
 						@if($errors->has('password'))
 						<div class="invalid-feedback">{{ $errors->first('password') }}</div>
 						@endif
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> tokap13
-=======
->>>>>>> tokap14
-=======
->>>>>>> tokap15
+						<div class="form-text text-muted">
+							<small>Kosongkan Password apabila tidak diubah.</small>
+						</div>
 					</div><!-- End Form Group-->
 
 
 					<div class="form-group form-label-group">
 						<input type="password" name="repassword"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-						class="form-control"
-						value="{{ old('repassword') }}"
-						id="iRePassword" placeholder="Re Password" required>
-						<label for="iRePassword">Re Password</label>
-					</div><!-- End Form Group-->
-
-					<div class="form-group form-label-group">
-						<select class="form-control"
-						name="akses">
-							<option value="">Pilih Akses Sebagai :</option>
-							<option value="operator">Operator</option>
-							<option value="admin">Administrator</option>
-							
-						</select>
-
-=======
-=======
->>>>>>> tokap14
-=======
->>>>>>> tokap15
 						class="form-control {{ $errors->has('repassword')?'is-invalid':''  }}"
-						id="iRePassword" placeholder="Re Password" required>
+						id="iRePassword" placeholder="Re Password">
 						<label for="iRePassword">Re Password</label>
 						@if($errors->has('repassword'))
 						<div class="invalid-feedback">{{ $errors->first('repassword') }}</div>
@@ -161,7 +75,7 @@
 
 					<div class="form-group form-label-group">
 						<?php 
-						$val = old('akses');
+						$val = old('akses',$rc->akses);
 						 ?>
 						<select class="form-control {{ $errors->has('akses')?'is-invalid':'' }}"
 						name="akses">
@@ -173,19 +87,12 @@
 						@if($errors->has('akses'))
 						<div class="invalid-feedback">{{ $errors->first('akses') }}</div>
 						@endif
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> tokap13
-=======
->>>>>>> tokap14
-=======
->>>>>>> tokap15
 						</div><!-- End Form Group-->
 
 				</div><!-- End Card Body-->
 
 				<div class="card-footer">
-					<button class="btn btn-primary" type="submit">Simpan</button>
+					<button class="btn btn-primary" type="submit">Update</button>
 				</div><!-- End Card Footer-->
 
 			</div><!-- End Card-->
