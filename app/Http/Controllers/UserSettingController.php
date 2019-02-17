@@ -12,6 +12,7 @@ use Illuminate\Http\Request;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use App\User;
 use Auth;
@@ -48,11 +49,16 @@ use Auth;
 use App\User;
 use Auth;
 >>>>>>> tokap15
+=======
+use App\User;
+use Auth;
+>>>>>>> tokap16
 
 class UserSettingController extends Controller
 {
 	public function form()
 	{
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -82,10 +88,13 @@ class UserSettingController extends Controller
 >>>>>>> tokap14
 =======
 >>>>>>> tokap15
+=======
+>>>>>>> tokap16
 		$data = User::where('id',Auth::id())->first();
 
 		return view('admin.pages.user.setting',['dt'=>$data]);
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -114,6 +123,8 @@ class UserSettingController extends Controller
 >>>>>>> tokap14
 =======
 >>>>>>> tokap15
+=======
+>>>>>>> tokap16
    public function update(Request $req)
    {
    		$id = Auth::id();
@@ -124,6 +135,7 @@ class UserSettingController extends Controller
    			'repassword'=>'same:password',
 
    		])->validate();
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -148,6 +160,8 @@ class UserSettingController extends Controller
 >>>>>>> tokap14
 =======
 >>>>>>> tokap15
+=======
+>>>>>>> tokap16
 
          if(!empty($req->password)){
             $field = [
@@ -177,6 +191,7 @@ class UserSettingController extends Controller
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 >>>>>>> tokap9
 =======
@@ -197,3 +212,6 @@ class UserSettingController extends Controller
 =======
 }
 >>>>>>> tokap15
+=======
+}
+>>>>>>> tokap16
