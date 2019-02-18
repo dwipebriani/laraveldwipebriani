@@ -20,6 +20,7 @@ class UserController extends Controller
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> tokap13
@@ -33,12 +34,15 @@ class UserController extends Controller
 >>>>>>> tokap17
 =======
 >>>>>>> tokap18
+=======
+>>>>>>> tokap19
     public function add()
     {
     	return view('admin.pages.user.add');
     }
     public function save(Request $req)
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -59,6 +63,8 @@ class UserController extends Controller
 >>>>>>> tokap17
 =======
 >>>>>>> tokap18
+=======
+>>>>>>> tokap19
         \Validator::make($req->all(),[
                 'name'=>'required|between:3,100',
                 'email'=>'required|unique:users,email',
@@ -68,6 +74,7 @@ class UserController extends Controller
 
         ])->validate();
         
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -85,6 +92,8 @@ class UserController extends Controller
 >>>>>>> tokap17
 =======
 >>>>>>> tokap18
+=======
+>>>>>>> tokap19
     	$result = new User;
         $result->name = $req->name;
         $result->email = $req->email;
@@ -97,6 +106,7 @@ class UserController extends Controller
             return back()->with('result','fail')->withInput();
           }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -116,6 +126,8 @@ class UserController extends Controller
 >>>>>>> tokap17
 =======
 >>>>>>> tokap18
+=======
+>>>>>>> tokap19
 }
 public function edit($id)
     {
@@ -128,6 +140,7 @@ public function update(Request $req)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     return 'Fungsi Update';
 }
 }
@@ -137,6 +150,8 @@ public function update(Request $req)
 >>>>>>> tokap17
 =======
 >>>>>>> tokap18
+=======
+>>>>>>> tokap19
      \Validator::make($req->all(),[
                 'name'=>'required|between:3,100',
                 'email'=>'required|unique:users,email,'.$req->id,
@@ -147,6 +162,7 @@ public function update(Request $req)
         ])->validate();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     return 'Fungsi Update';
 }
 }
@@ -154,6 +170,8 @@ public function update(Request $req)
 =======
 =======
 >>>>>>> tokap18
+=======
+>>>>>>> tokap19
     if(!empty($req->password)){
         $field = [
             'name'=>$req->name,
@@ -183,8 +201,23 @@ public function update(Request $req)
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 >>>>>>> tokap17
 =======
 }
 >>>>>>> tokap18
+=======
+
+public function delete(Request $req)
+{
+    $result = User::find($req->id);
+
+    if ( $result->delete() ) {
+        return back()->with('result','delete');
+    } else {
+        return back()->with('result','fail-delete');
+    }
+}
+}
+>>>>>>> tokap19

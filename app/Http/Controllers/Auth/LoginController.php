@@ -49,6 +49,7 @@ class LoginController extends Controller
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     
    
 =======
@@ -79,6 +80,8 @@ class LoginController extends Controller
 >>>>>>> tokap17
 =======
 >>>>>>> tokap18
+=======
+>>>>>>> tokap19
     }
     protected function redirectTo()
     {
