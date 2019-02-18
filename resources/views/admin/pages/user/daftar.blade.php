@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="row">
 	<div class="col-md-6 mb-3">
 <<<<<<< HEAD
@@ -25,6 +26,8 @@
 >>>>>>> tokap16
 =======
 >>>>>>> tokap17
+=======
+>>>>>>> tokap18
 
 @if(session('result') == 'success')
 <div class="alert alert-success alert-dismissible fade show">
@@ -36,7 +39,10 @@
 @endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> tokap18
 @if(session('result') == 'update')
 <div class="alert alert-success alert-dismissible fade show">
 	<strong>Update!</strong> Berhasil diupdate.
@@ -46,11 +52,15 @@
 </div>
 @endif
 
+<<<<<<< HEAD
 >>>>>>> tokap17
+=======
+>>>>>>> tokap18
 
 <div class="row">
 	<div class="col-md-6 mb-3">
 		<a href="{{ route('admin.user.add') }}" class="btn btn-primary">[+] Tambah</a>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -61,6 +71,8 @@
 >>>>>>> tokap16
 =======
 >>>>>>> tokap17
+=======
+>>>>>>> tokap18
 	</div>
 
 	<div class="col-md-6 mb-3">
@@ -82,6 +94,7 @@
 
 <table class="table table-striped mb-3">
 	<tr>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -111,11 +124,15 @@
 =======
 		<th>Name</th><th>Email</th><th>Akses</th><th>&nbsp;</th>
 >>>>>>> tokap17
+=======
+		<th>Name</th><th>Email</th><th>Akses</th><th>&nbsp;</th>
+>>>>>>> tokap18
 	</tr>
 	@foreach($data as $dt)
 	<tr>
 			<td>{{ $dt->name }}</td>
 			<td>{{ $dt->email }}</td>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -156,6 +173,17 @@
 				</a>
 				@if($dt->id != Auth::id() )
 				<button class="btn btn-danger btn-sm" type="button">
+=======
+			<td>{{ $dt->akses }}</td>
+			<td>
+				<a href="{{ route('admin.user.edit',['id'=>$dt->id]) }}" class="btn btn-success btn-sm">
+					<i class="fa fa-w fa-edit"></i>
+				</a>
+				@if($dt->id != Auth::id() )
+				<button class="btn btn-danger btn-sm btn-trash" 
+				data-id="{{ $dt->id }}"
+				type="button">
+>>>>>>> tokap18
 					<i class="fa fa-w fa-trash"></i>
 				</button>
 				@endif
@@ -168,4 +196,56 @@
 		$data->appends( request()->only('keyword') )
 		->links('vendor.pagination.bootstrap-4')
 }}
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+
+@push('modal')
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			
+			<div class="modal-header">
+				<h5 class="modal-title">Delete</h5>
+				<button class="close" type="button" data-dismiss="modal">
+					<span>x</span>
+				 </button>
+			</div><!--End Modal Header-->
+
+			<div class="modal-body">
+				Apakah anda yakin ingin menghapusnya?
+				<form id="form-delete" method="post" action="#">
+					{{ csrf_field() }}
+					{{ method_field('delete') }}
+					<input type="hidden" name="id" id="input-id">
+				</form>
+			</div><!--End Modal Body-->
+
+			<div class="modal-footer">
+					<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+					<button class="btn btn-primary btn-delete" type="button">Delete</button>
+			</div>
+
+		</div><!--End Modal Content-->
+	</div><!--End Modal Dialog-->
+</div>
+@endpush
+
+@push('js')
+<script type="text/javascript">
+	$(function(){
+		$('.btn-trash').click(function(){
+			id = $(this).attr('data-id');
+			$('#input-id').val(id);
+			$('#deleteModal').modal('show');
+		});
+
+		$('.btn-delete').click(function(){
+			alert( $('#input-id').val() );
+		});
+	})
+</script>
+
+@endpush
+>>>>>>> tokap18
