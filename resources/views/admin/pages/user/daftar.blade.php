@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="row">
 	<div class="col-md-6 mb-3">
 <<<<<<< HEAD
@@ -31,6 +32,8 @@
 >>>>>>> tokap18
 =======
 >>>>>>> tokap19
+=======
+>>>>>>> tokap20
 
 @if(session('result') == 'success')
 <div class="alert alert-success alert-dismissible fade show">
@@ -44,11 +47,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> tokap18
 =======
 >>>>>>> tokap19
+=======
+>>>>>>> tokap20
 @if(session('result') == 'update')
 <div class="alert alert-success alert-dismissible fade show">
 	<strong>Update!</strong> Berhasil diupdate.
@@ -60,10 +66,13 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap17
 =======
 >>>>>>> tokap18
 =======
+=======
+>>>>>>> tokap20
 @if(session('result') == 'delete')
 <div class="alert alert-success alert-dismissible fade show">
 	<strong>Delete!</strong> Berhasil dihapus.
@@ -82,11 +91,15 @@
 </div>
 @endif
 
+<<<<<<< HEAD
 >>>>>>> tokap19
+=======
+>>>>>>> tokap20
 
 <div class="row">
 	<div class="col-md-6 mb-3">
 		<a href="{{ route('admin.user.add') }}" class="btn btn-primary">[+] Tambah</a>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -103,6 +116,8 @@
 >>>>>>> tokap18
 =======
 >>>>>>> tokap19
+=======
+>>>>>>> tokap20
 	</div>
 
 	<div class="col-md-6 mb-3">
@@ -124,6 +139,7 @@
 
 <table class="table table-striped mb-3">
 	<tr>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -161,11 +177,15 @@
 =======
 		<th>Name</th><th>Email</th><th>Akses</th><th>&nbsp;</th>
 >>>>>>> tokap19
+=======
+		<th>Name</th><th>Email</th><th>Akses</th><th>&nbsp;</th>
+>>>>>>> tokap20
 	</tr>
 	@foreach($data as $dt)
 	<tr>
 			<td>{{ $dt->name }}</td>
 			<td>{{ $dt->email }}</td>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -211,6 +231,8 @@
 =======
 =======
 >>>>>>> tokap19
+=======
+>>>>>>> tokap20
 			<td>{{ $dt->akses }}</td>
 			<td>
 				<a href="{{ route('admin.user.edit',['id'=>$dt->id]) }}" class="btn btn-success btn-sm">
@@ -221,9 +243,12 @@
 				data-id="{{ $dt->id }}"
 				type="button">
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap18
 =======
 >>>>>>> tokap19
+=======
+>>>>>>> tokap20
 					<i class="fa fa-w fa-trash"></i>
 				</button>
 				@endif
@@ -238,10 +263,13 @@
 }}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @endsection
 =======
 =======
 >>>>>>> tokap19
+=======
+>>>>>>> tokap20
 @endsection
 
 @push('modal')
@@ -259,10 +287,14 @@
 			<div class="modal-body">
 				Apakah anda yakin ingin menghapusnya?
 <<<<<<< HEAD
+<<<<<<< HEAD
 				<form id="form-delete" method="post" action="#">
 =======
 				<form id="form-delete" method="post" action="{{ route('admin.user') }} ">
 >>>>>>> tokap19
+=======
+				<form id="form-delete" method="post" action="{{ route('admin.user') }} ">
+>>>>>>> tokap20
 					{{ csrf_field() }}
 					{{ method_field('delete') }}
 					<input type="hidden" name="id" id="input-id">
@@ -290,17 +322,25 @@
 
 		$('.btn-delete').click(function(){
 <<<<<<< HEAD
+<<<<<<< HEAD
 			alert( $('#input-id').val() );
 =======
 			$('#form-delete').submit();
 >>>>>>> tokap19
+=======
+			$('#form-delete').submit();
+>>>>>>> tokap20
 		});
 	})
 </script>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 @endpush
 >>>>>>> tokap18
 =======
 @endpush
 >>>>>>> tokap19
+=======
+@endpush
+>>>>>>> tokap20
