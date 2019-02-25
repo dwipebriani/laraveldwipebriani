@@ -11,6 +11,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="row">
 	<div class="col-md-6 mb-3">
 <<<<<<< HEAD
@@ -37,6 +38,8 @@
 >>>>>>> tokap20
 =======
 >>>>>>> tokap21
+=======
+>>>>>>> tokap22
 
 @if(session('result') == 'success')
 <div class="alert alert-success alert-dismissible fade show">
@@ -52,6 +55,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> tokap18
@@ -61,6 +65,8 @@
 >>>>>>> tokap20
 =======
 >>>>>>> tokap21
+=======
+>>>>>>> tokap22
 @if(session('result') == 'update')
 <div class="alert alert-success alert-dismissible fade show">
 	<strong>Update!</strong> Berhasil diupdate.
@@ -74,6 +80,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap17
 =======
 >>>>>>> tokap18
@@ -82,6 +89,8 @@
 >>>>>>> tokap20
 =======
 >>>>>>> tokap21
+=======
+>>>>>>> tokap22
 @if(session('result') == 'delete')
 <div class="alert alert-success alert-dismissible fade show">
 	<strong>Delete!</strong> Berhasil dihapus.
@@ -102,15 +111,19 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap19
 =======
 >>>>>>> tokap20
 =======
 >>>>>>> tokap21
+=======
+>>>>>>> tokap22
 
 <div class="row">
 	<div class="col-md-6 mb-3">
 		<a href="{{ route('admin.user.add') }}" class="btn btn-primary">[+] Tambah</a>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -133,6 +146,8 @@
 >>>>>>> tokap20
 =======
 >>>>>>> tokap21
+=======
+>>>>>>> tokap22
 	</div>
 
 	<div class="col-md-6 mb-3">
@@ -154,6 +169,7 @@
 
 <table class="table table-striped mb-3">
 	<tr>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -199,11 +215,15 @@
 =======
 		<th>Name</th><th>Email</th><th>Akses</th><th>&nbsp;</th>
 >>>>>>> tokap21
+=======
+		<th>Name</th><th>Email</th><th>Akses</th><th>&nbsp;</th>
+>>>>>>> tokap22
 	</tr>
 	@foreach($data as $dt)
 	<tr>
 			<td>{{ $dt->name }}</td>
 			<td>{{ $dt->email }}</td>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -255,6 +275,8 @@
 >>>>>>> tokap20
 =======
 >>>>>>> tokap21
+=======
+>>>>>>> tokap22
 			<td>{{ $dt->akses }}</td>
 			<td>
 				<a href="{{ route('admin.user.edit',['id'=>$dt->id]) }}" class="btn btn-success btn-sm">
@@ -267,6 +289,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap18
 =======
 >>>>>>> tokap19
@@ -274,6 +297,8 @@
 >>>>>>> tokap20
 =======
 >>>>>>> tokap21
+=======
+>>>>>>> tokap22
 					<i class="fa fa-w fa-trash"></i>
 				</button>
 				@endif
@@ -290,6 +315,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @endsection
 =======
 =======
@@ -298,6 +324,8 @@
 >>>>>>> tokap20
 =======
 >>>>>>> tokap21
+=======
+>>>>>>> tokap22
 @endsection
 
 @push('modal')
@@ -317,6 +345,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				<form id="form-delete" method="post" action="#">
 =======
 				<form id="form-delete" method="post" action="{{ route('admin.user') }} ">
@@ -327,6 +356,9 @@
 =======
 				<form id="form-delete" method="post" action="{{ route('admin.user') }} ">
 >>>>>>> tokap21
+=======
+				<form id="form-delete" method="post" action="{{ route('admin.user') }} ">
+>>>>>>> tokap22
 					{{ csrf_field() }}
 					{{ method_field('delete') }}
 					<input type="hidden" name="id" id="input-id">
@@ -356,6 +388,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			alert( $('#input-id').val() );
 =======
 			$('#form-delete').submit();
@@ -366,10 +399,14 @@
 =======
 			$('#form-delete').submit();
 >>>>>>> tokap21
+=======
+			$('#form-delete').submit();
+>>>>>>> tokap22
 		});
 	})
 </script>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -384,3 +421,6 @@
 =======
 @endpush
 >>>>>>> tokap21
+=======
+@endpush
+>>>>>>> tokap22

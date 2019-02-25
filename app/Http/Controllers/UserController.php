@@ -23,6 +23,7 @@ class UserController extends Controller
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> tokap13
@@ -42,12 +43,15 @@ class UserController extends Controller
 >>>>>>> tokap20
 =======
 >>>>>>> tokap21
+=======
+>>>>>>> tokap22
     public function add()
     {
     	return view('admin.pages.user.add');
     }
     public function save(Request $req)
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -77,6 +81,8 @@ class UserController extends Controller
 >>>>>>> tokap20
 =======
 >>>>>>> tokap21
+=======
+>>>>>>> tokap22
         \Validator::make($req->all(),[
                 'name'=>'required|between:3,100',
                 'email'=>'required|unique:users,email',
@@ -86,6 +92,7 @@ class UserController extends Controller
 
         ])->validate();
         
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -112,6 +119,8 @@ class UserController extends Controller
 >>>>>>> tokap20
 =======
 >>>>>>> tokap21
+=======
+>>>>>>> tokap22
     	$result = new User;
         $result->name = $req->name;
         $result->email = $req->email;
@@ -124,6 +133,7 @@ class UserController extends Controller
             return back()->with('result','fail')->withInput();
           }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -152,6 +162,8 @@ class UserController extends Controller
 >>>>>>> tokap20
 =======
 >>>>>>> tokap21
+=======
+>>>>>>> tokap22
 }
 public function edit($id)
     {
@@ -161,6 +173,7 @@ public function edit($id)
 
 public function update(Request $req)
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -182,6 +195,8 @@ public function update(Request $req)
 >>>>>>> tokap20
 =======
 >>>>>>> tokap21
+=======
+>>>>>>> tokap22
      \Validator::make($req->all(),[
                 'name'=>'required|between:3,100',
                 'email'=>'required|unique:users,email,'.$req->id,
@@ -190,6 +205,7 @@ public function update(Request $req)
                 'akses'=>'required',
 
         ])->validate();
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -208,6 +224,8 @@ public function update(Request $req)
 >>>>>>> tokap20
 =======
 >>>>>>> tokap21
+=======
+>>>>>>> tokap22
     if(!empty($req->password)){
         $field = [
             'name'=>$req->name,
@@ -240,6 +258,7 @@ public function update(Request $req)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 >>>>>>> tokap17
 =======
@@ -250,6 +269,8 @@ public function update(Request $req)
 >>>>>>> tokap20
 =======
 >>>>>>> tokap21
+=======
+>>>>>>> tokap22
 
 public function delete(Request $req)
 {
@@ -263,6 +284,7 @@ public function delete(Request $req)
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 >>>>>>> tokap19
 =======
@@ -271,3 +293,6 @@ public function delete(Request $req)
 =======
 }
 >>>>>>> tokap21
+=======
+}
+>>>>>>> tokap22

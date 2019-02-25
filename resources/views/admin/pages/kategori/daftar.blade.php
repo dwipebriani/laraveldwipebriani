@@ -4,10 +4,16 @@
 <h1>Kategori</h1>
 <hr>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <div class="row">
 	<div class="col-md-6 mb-3">
 		<a href="#" class="btn btn-primary">[+] Tambah</a>
+=======
+<div class="row">
+	<div class="col-md-6 mb-3">
+		<a href="{{ route('admin.kategori.add') }}" class="btn btn-primary">[+] Tambah</a>
+>>>>>>> tokap22
 	</div>
 
 	<div class="col-md-6 mb-3">
@@ -48,5 +54,8 @@
 	$data->appends( request()->only('keyword') )
 	->links('vendor.pagination.bootstrap-4')
 }}
+<<<<<<< HEAD
 >>>>>>> tokap21
+=======
+>>>>>>> tokap22
 @endsection
