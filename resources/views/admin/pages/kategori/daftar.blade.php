@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <div class="row">
 	<div class="col-md-6 mb-3">
@@ -20,6 +21,21 @@
 	<div class="col-md-6 mb-3">
 		<a href="{{ route('admin.kategori.add') }}" class="btn btn-primary">[+] Tambah</a>
 >>>>>>> tokap23
+=======
+
+@if( session('result') == 'success')
+<div class=" alert alert-success alert-dismissible fade show">
+	<strong>Saved!</strong> Berhasil disimpan.
+	<button type="button" class="close" data-dismiss="alert">
+		&times;
+	</button>
+</div>
+@endif
+
+<div class="row">
+	<div class="col-md-6 mb-3">
+		<a href="{{ route('admin.kategori.add') }}" class="btn btn-primary">[+] Tambah</a>
+>>>>>>> tokap24
 	</div>
 
 	<div class="col-md-6 mb-3">
@@ -62,9 +78,12 @@
 }}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap21
 =======
 >>>>>>> tokap22
 =======
 >>>>>>> tokap23
+=======
+>>>>>>> tokap24
 @endsection

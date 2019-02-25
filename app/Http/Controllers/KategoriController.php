@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use App\Kategori;
 >>>>>>> tokap21
@@ -15,11 +16,15 @@ use App\Kategori;
 =======
 use App\Kategori;
 >>>>>>> tokap23
+=======
+use App\Kategori;
+>>>>>>> tokap24
 
 class KategoriController extends Controller
 {
     public function daftar(Request $req)
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -32,6 +37,8 @@ class KategoriController extends Controller
 =======
 =======
 >>>>>>> tokap23
+=======
+>>>>>>> tokap24
     	$data = kategori::where('nama_kategori','like',"%{$req->keyword}%")->paginate(10);
 
     	return view('admin.pages.kategori.daftar',['data'=>$data]);
@@ -43,6 +50,7 @@ class KategoriController extends Controller
     public function save(Request $req)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
     	return 'Fungsi Save';
 >>>>>>> tokap22
 =======
@@ -50,6 +58,21 @@ class KategoriController extends Controller
     	])->validate();
     	return 'Fungsi Save';
 >>>>>>> tokap23
+=======
+    	\Validator::make($req->all(),['kategori'=>'required|between:3,100|unique:kategori,nama_kategori',
+    	])->validate();
+    	
+
+    	$result = new Kategori;
+    	$result->nama_kategori = $req->kategori;
+
+    	if( $result->save() ){
+    		return redirect()->route('admin.kategori')
+    		->with('result','success');
+    	} else {
+    		return back()->with('result','fail')->withInput();
+    	}
+>>>>>>> tokap24
     }
 }
 
