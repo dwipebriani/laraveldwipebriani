@@ -18,17 +18,31 @@
 			<div class="card-body">
 				<div class="form-group form-label-group">
 					<input type="text" name="kategori"
+<<<<<<< HEAD
 					class="form-control"
 					value="{{ old('kategori') }}"
 					id="iKategori" placeholder="Kategori" required>
 					<label for="iKategori">Kategori</label>
+=======
+					class="form-control {{ $errors->has('kategori')?'is-invalid':'' }}"
+					value="{{ old('kategori') }}"
+					id="iKategori" placeholder="Kategori" required>
+					<label for="iKategori">Kategori</label>
+					@if( $errors->has('kategori') )
+					<div class="invalid-feedback">{{ $errors->first('kategori') }}</div>
+					@endif
+>>>>>>> tokap23
 				</div><!-- End Form Group -->
 			</div><!-- End Card Body -->
 
 
 			<div class="card-footer">
 			<button class="btn btn-primary" type="submit">Simpan</button>
+<<<<<<< HEAD
 		</div><!--End Card Footer ->
+=======
+		</div><!--End Card Footer-->
+>>>>>>> tokap23
 
 		</div><!--End Card --> 
 	</form>
