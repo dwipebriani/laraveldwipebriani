@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use App\Kategori;
 >>>>>>> tokap21
@@ -19,11 +20,15 @@ use App\Kategori;
 =======
 use App\Kategori;
 >>>>>>> tokap24
+=======
+use App\Kategori;
+>>>>>>> tokap25
 
 class KategoriController extends Controller
 {
     public function daftar(Request $req)
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -39,6 +44,8 @@ class KategoriController extends Controller
 >>>>>>> tokap23
 =======
 >>>>>>> tokap24
+=======
+>>>>>>> tokap25
     	$data = kategori::where('nama_kategori','like',"%{$req->keyword}%")->paginate(10);
 
     	return view('admin.pages.kategori.daftar',['data'=>$data]);
@@ -51,6 +58,7 @@ class KategoriController extends Controller
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     	return 'Fungsi Save';
 >>>>>>> tokap22
 =======
@@ -59,6 +67,8 @@ class KategoriController extends Controller
     	return 'Fungsi Save';
 >>>>>>> tokap23
 =======
+=======
+>>>>>>> tokap25
     	\Validator::make($req->all(),['kategori'=>'required|between:3,100|unique:kategori,nama_kategori',
     	])->validate();
     	
@@ -72,7 +82,21 @@ class KategoriController extends Controller
     	} else {
     		return back()->with('result','fail')->withInput();
     	}
+<<<<<<< HEAD
 >>>>>>> tokap24
+=======
+    }
+
+    public function edit($id)
+    {
+        $data = Kategori::where('id',$id)->first();
+        return view('admin.pages.kategori.edit',['rc'=>$data]);
+    }
+
+    public function update(Request $req)
+    {
+        return 'Fungsi Update';
+>>>>>>> tokap25
     }
 }
 

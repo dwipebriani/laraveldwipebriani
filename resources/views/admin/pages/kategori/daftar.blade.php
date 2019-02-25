@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <div class="row">
 	<div class="col-md-6 mb-3">
@@ -22,6 +23,8 @@
 		<a href="{{ route('admin.kategori.add') }}" class="btn btn-primary">[+] Tambah</a>
 >>>>>>> tokap23
 =======
+=======
+>>>>>>> tokap25
 
 @if( session('result') == 'success')
 <div class=" alert alert-success alert-dismissible fade show">
@@ -35,7 +38,10 @@
 <div class="row">
 	<div class="col-md-6 mb-3">
 		<a href="{{ route('admin.kategori.add') }}" class="btn btn-primary">[+] Tambah</a>
+<<<<<<< HEAD
 >>>>>>> tokap24
+=======
+>>>>>>> tokap25
 	</div>
 
 	<div class="col-md-6 mb-3">
@@ -60,7 +66,11 @@
 			<tr>
 				<td>{{ $dt->nama_kategori }}</td>
 				<td>
+<<<<<<< HEAD
 					<a href="#" class="btn btn-success btn-sm">
+=======
+					<a href="{{route('admin.kategori.edit',['id'=>$dt->id])}}" class="btn btn-success btn-sm">
+>>>>>>> tokap25
 						<i class="fa fa-w fa-edit"></i>
 					</a>
 					<button type="button" class="btn btn-danger btn-sm">
@@ -79,6 +89,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap21
 =======
 >>>>>>> tokap22
@@ -86,4 +97,6 @@
 >>>>>>> tokap23
 =======
 >>>>>>> tokap24
+=======
+>>>>>>> tokap25
 @endsection
