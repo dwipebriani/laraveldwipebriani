@@ -6,9 +6,12 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> tokap25
+=======
+>>>>>>> tokap26
 @if( session('result') == 'fail' )
 <div class=" alert alert-danger alert-dismissible fade show">
 	<strong>Faild !</strong> Gagal disimpan.
@@ -19,9 +22,12 @@
 @endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap24
 =======
 >>>>>>> tokap25
+=======
+>>>>>>> tokap26
 <div class="row">
 	<div class="col-md-6 mb-3">
 		<form method="POST" action="{{ route('admin.kategori.add') }}">
@@ -39,6 +45,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 					class="form-control"
 					value="{{ old('kategori') }}"
 					id="iKategori" placeholder="Kategori" required>
@@ -48,6 +55,8 @@
 >>>>>>> tokap24
 =======
 >>>>>>> tokap25
+=======
+>>>>>>> tokap26
 					class="form-control {{ $errors->has('kategori')?'is-invalid':'' }}"
 					value="{{ old('kategori') }}"
 					id="iKategori" placeholder="Kategori" required>
@@ -57,17 +66,21 @@
 					@endif
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap23
 =======
 >>>>>>> tokap24
 =======
 >>>>>>> tokap25
+=======
+>>>>>>> tokap26
 				</div><!-- End Form Group -->
 			</div><!-- End Card Body -->
 
 
 			<div class="card-footer">
 			<button class="btn btn-primary" type="submit">Simpan</button>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -81,6 +94,9 @@
 =======
 		</div><!--End Card Footer-->
 >>>>>>> tokap25
+=======
+		</div><!--End Card Footer-->
+>>>>>>> tokap26
 
 		</div><!--End Card --> 
 	</form>
