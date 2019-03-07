@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use App\Kategori;
 >>>>>>> tokap21
@@ -27,11 +28,15 @@ use App\Kategori;
 =======
 use App\Kategori;
 >>>>>>> tokap26
+=======
+use App\Kategori;
+>>>>>>> tokap27
 
 class KategoriController extends Controller
 {
     public function daftar(Request $req)
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -53,6 +58,8 @@ class KategoriController extends Controller
 >>>>>>> tokap25
 =======
 >>>>>>> tokap26
+=======
+>>>>>>> tokap27
     	$data = kategori::where('nama_kategori','like',"%{$req->keyword}%")->paginate(10);
 
     	return view('admin.pages.kategori.daftar',['data'=>$data]);
@@ -63,6 +70,7 @@ class KategoriController extends Controller
     }
     public function save(Request $req)
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -79,6 +87,8 @@ class KategoriController extends Controller
 >>>>>>> tokap25
 =======
 >>>>>>> tokap26
+=======
+>>>>>>> tokap27
     	\Validator::make($req->all(),['kategori'=>'required|between:3,100|unique:kategori,nama_kategori',
     	])->validate();
     	
@@ -94,10 +104,13 @@ class KategoriController extends Controller
     	}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap24
 =======
 =======
 >>>>>>> tokap26
+=======
+>>>>>>> tokap27
     }
 
     public function edit($id)
@@ -109,6 +122,7 @@ class KategoriController extends Controller
     public function update(Request $req)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return 'Fungsi Update';
 >>>>>>> tokap25
 =======
@@ -117,6 +131,22 @@ class KategoriController extends Controller
         ])->validate();
         return 'Fungsi Update';
 >>>>>>> tokap26
+=======
+        \Validator::make($req->all(),[
+            'kategori'=>'required|between:3,100|unique:kategori,nama_kategori,'.$req->id,
+        ])->validate();
+        
+
+        $result = Kategori::where('id',$req->id)
+                ->update([
+                        'nama_kategori'=>$req->kategori,
+                    ]);
+        if( $result ){
+            return redirect()->route('admin.kategori')->with('result','update');
+        } else {
+            return back()->with('result','fail');
+        }
+>>>>>>> tokap27
     }
 }
 

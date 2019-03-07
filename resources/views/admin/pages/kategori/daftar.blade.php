@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <div class="row">
 	<div class="col-md-6 mb-3">
@@ -28,6 +29,8 @@
 >>>>>>> tokap25
 =======
 >>>>>>> tokap26
+=======
+>>>>>>> tokap27
 
 @if( session('result') == 'success')
 <div class=" alert alert-success alert-dismissible fade show">
@@ -38,6 +41,7 @@
 </div>
 @endif
 
+<<<<<<< HEAD
 <div class="row">
 	<div class="col-md-6 mb-3">
 		<a href="{{ route('admin.kategori.add') }}" class="btn btn-primary">[+] Tambah</a>
@@ -48,6 +52,20 @@
 >>>>>>> tokap25
 =======
 >>>>>>> tokap26
+=======
+@if( session('result') == 'update')
+<div class=" alert alert-success alert-dismissible fade show">
+	<strong>Updated !</strong> Berhasil diupdate.
+	<button type="button" class="close" data-dismiss="alert">
+		&times;
+	</button>
+</div>
+@endif
+
+<div class="row">
+	<div class="col-md-6 mb-3">
+		<a href="{{ route('admin.kategori.add') }}" class="btn btn-primary">[+] Tambah</a>
+>>>>>>> tokap27
 	</div>
 
 	<div class="col-md-6 mb-3">
@@ -74,6 +92,7 @@
 				<td>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 					<a href="#" class="btn btn-success btn-sm">
 =======
 					<a href="{{route('admin.kategori.edit',['id'=>$dt->id])}}" class="btn btn-success btn-sm">
@@ -81,6 +100,9 @@
 =======
 					<a href="{{route('admin.kategori.edit',['id'=>$dt->id])}}" class="btn btn-success btn-sm">
 >>>>>>> tokap26
+=======
+					<a href="{{route('admin.kategori.edit',['id'=>$dt->id])}}" class="btn btn-success btn-sm">
+>>>>>>> tokap27
 						<i class="fa fa-w fa-edit"></i>
 					</a>
 					<button type="button" class="btn btn-danger btn-sm">
@@ -101,6 +123,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap21
 =======
 >>>>>>> tokap22
@@ -112,4 +135,6 @@
 >>>>>>> tokap25
 =======
 >>>>>>> tokap26
+=======
+>>>>>>> tokap27
 @endsection

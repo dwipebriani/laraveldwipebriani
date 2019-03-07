@@ -38,6 +38,7 @@ Route::get('/', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Route::group(['middleware'=>['auth']], function(){
 =======
 >>>>>>> 3feb4755e00a71ed519f45f297a511300eb28101
@@ -185,6 +186,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 >>>>>>> tokap25
 =======
 >>>>>>> tokap26
+=======
+>>>>>>> tokap27
 Route::group(['prefix'=>'admin','middleware'=>['auth']], function(){
 	
 
@@ -194,6 +197,7 @@ Route::group(['prefix'=>'admin','middleware'=>['auth']], function(){
 
 
 	/*User*/ 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -213,10 +217,13 @@ Route::group(['prefix'=>'admin','middleware'=>['auth']], function(){
 >>>>>>> tokap25
 =======
 >>>>>>> tokap26
+=======
+>>>>>>> tokap27
 	Route::prefix('user')->group(function() {
 
 		Route::get('/','UserController@daftar')->name('admin.user')->middleware('akses.admin');
 		Route::delete('/','UserController@delete')->middleware('akses.admin');
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -239,10 +246,13 @@ Route::group(['prefix'=>'admin','middleware'=>['auth']], function(){
 >>>>>>> tokap25
 =======
 >>>>>>> tokap26
+=======
+>>>>>>> tokap27
 
 		route::get('/add','UserController@add')->name('admin.user.add')->middleware('akses.admin');
 		route::post('/add','UserController@save')->middleware('akses.admin');
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -303,11 +313,16 @@ Route::group(['prefix'=>'admin','middleware'=>['auth']], function(){
 		route::get('/edit/{id}','UserController@edit')->name('admin.user.edit')->middleware('akses.admin');
 		route::post('/edit/{id}','UserController@update')->middleware('akses.admin');
 >>>>>>> tokap26
+=======
+		route::get('/edit/{id}','UserController@edit')->name('admin.user.edit')->middleware('akses.admin');
+		route::post('/edit/{id}','UserController@update')->middleware('akses.admin');
+>>>>>>> tokap27
 
 
 
 		Route::get('/setting','UserSettingController@form')->name('admin.user.setting');
 		Route::post('/setting','UserSettingController@update');
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -410,12 +425,15 @@ Route::any('register', function(){ return abort(404); });
 >>>>>>> tokap25
 =======
 >>>>>>> tokap26
+=======
+>>>>>>> tokap27
 	});
 
 /* kategori */
 
 Route::group(['prefix'=>'kategori','middleware'=>'akses.admin'], function(){
 	Route::get('/','kategoriController@daftar')->name('admin.kategori');
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -440,6 +458,8 @@ Route::group(['prefix'=>'kategori','middleware'=>'akses.admin'], function(){
 =======
 =======
 >>>>>>> tokap26
+=======
+>>>>>>> tokap27
 		Route::get('/add','kategoriController@add')->name('admin.kategori.add');
 			Route::post('/edit/{id}','kategoriController@save');
 			Route::get('/edit/{id}','kategoriController@edit')->name('admin.kategori.edit');
@@ -447,9 +467,12 @@ Route::group(['prefix'=>'kategori','middleware'=>'akses.admin'], function(){
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap25
 =======
 >>>>>>> tokap26
+=======
+>>>>>>> tokap27
 
 });
 
@@ -459,6 +482,7 @@ Auth::routes();
 
 Route::any('register', function(){ return abort(404); });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -478,3 +502,5 @@ Route::any('register', function(){ return abort(404); });
 >>>>>>> tokap25
 =======
 >>>>>>> tokap26
+=======
+>>>>>>> tokap27
