@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use App\Kategori;
 >>>>>>> tokap21
@@ -31,11 +32,15 @@ use App\Kategori;
 =======
 use App\Kategori;
 >>>>>>> tokap27
+=======
+use App\Kategori;
+>>>>>>> tokap 28-29
 
 class KategoriController extends Controller
 {
     public function daftar(Request $req)
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -61,6 +66,9 @@ class KategoriController extends Controller
 =======
 >>>>>>> tokap27
     	$data = kategori::where('nama_kategori','like',"%{$req->keyword}%")->paginate(10);
+=======
+    	$data = Kategori::where('nama_kategori','like',"%{$req->keyword}%")->paginate(10);
+>>>>>>> tokap 28-29
 
     	return view('admin.pages.kategori.daftar',['data'=>$data]);
     }
@@ -70,6 +78,7 @@ class KategoriController extends Controller
     }
     public function save(Request $req)
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -90,6 +99,10 @@ class KategoriController extends Controller
 =======
 >>>>>>> tokap27
     	\Validator::make($req->all(),['kategori'=>'required|between:3,100|unique:kategori,nama_kategori',
+=======
+    	\Validator::make($req->all(),[
+            'kategori'=>'required|between:3,100|unique:kategori,nama_kategori',
+>>>>>>> tokap 28-29
     	])->validate();
     	
 
@@ -105,12 +118,15 @@ class KategoriController extends Controller
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap24
 =======
 =======
 >>>>>>> tokap26
 =======
 >>>>>>> tokap27
+=======
+>>>>>>> tokap 28-29
     }
 
     public function edit($id)
@@ -123,6 +139,7 @@ class KategoriController extends Controller
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         return 'Fungsi Update';
 >>>>>>> tokap25
 =======
@@ -132,6 +149,8 @@ class KategoriController extends Controller
         return 'Fungsi Update';
 >>>>>>> tokap26
 =======
+=======
+>>>>>>> tokap 28-29
         \Validator::make($req->all(),[
             'kategori'=>'required|between:3,100|unique:kategori,nama_kategori,'.$req->id,
         ])->validate();
@@ -146,7 +165,23 @@ class KategoriController extends Controller
         } else {
             return back()->with('result','fail');
         }
+<<<<<<< HEAD
 >>>>>>> tokap27
     }
 }
 
+=======
+    }
+
+    public function delete(Request $req)
+{
+    $result = Kategori::find($req->id);
+
+    if ( $result->delete() ) {
+        return back()->with('result','delete');
+    } else {
+        return back()->with('result','fail-delete');
+    }
+}
+}
+>>>>>>> tokap 28-29
