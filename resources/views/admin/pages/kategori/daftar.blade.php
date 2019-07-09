@@ -12,6 +12,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <div class="row">
 	<div class="col-md-6 mb-3">
@@ -37,6 +38,8 @@
 >>>>>>> tokap 28-29
 =======
 >>>>>>> tokap 30-31
+=======
+>>>>>>> tokap 32
 
 @if( session('result') == 'success')
 <div class=" alert alert-success alert-dismissible fade show">
@@ -47,6 +50,7 @@
 </div>
 @endif
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -74,12 +78,18 @@
 <div class=" alert alert-success alert-dismissible fade show">
 	<strong>Updated!</strong> Berhasil diupdate.
 >>>>>>> tokap 30-31
+=======
+@if( session('result') == 'update' )
+<div class=" alert alert-success alert-dismissible fade show">
+	<strong>Updated!</strong> Berhasil diupdate.
+>>>>>>> tokap 32
 	<button type="button" class="close" data-dismiss="alert">
 		&times;
 	</button>
 </div>
 @endif
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <div class="row">
@@ -89,6 +99,8 @@
 =======
 =======
 >>>>>>> tokap 30-31
+=======
+>>>>>>> tokap 32
 
 @if(session('result') == 'delete')
 <div class="alert alert-success alert-dismissible fade show">
@@ -115,9 +127,12 @@
 	<div class="col-md-6 mb-3">
 		<a href="{{ route('admin.kategori.add')}}" class="btn btn-primary">[+] Tambah</a>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap 28-29
 =======
 >>>>>>> tokap 30-31
+=======
+>>>>>>> tokap 32
 	</div>
 
 	<div class="col-md-6 mb-3">
@@ -147,6 +162,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 					<a href="#" class="btn btn-success btn-sm">
 =======
 					<a href="{{route('admin.kategori.edit',['id'=>$dt->id])}}" class="btn btn-success btn-sm">
@@ -163,6 +179,8 @@
 =======
 =======
 >>>>>>> tokap 30-31
+=======
+>>>>>>> tokap 32
 					<a href="{{route('admin.kategori.edit',['id'=>$dt->id]) }}"
 					class="btn btn-success btn-sm">
 						<i class="fa fa-w fa-edit"></i>
@@ -170,13 +188,17 @@
 					<button type="button" class="btn btn-danger btn-sm btn-trash"
 					data-id="{{ $dt->id }}">
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap 28-29
 =======
 >>>>>>> tokap 30-31
+=======
+>>>>>>> tokap 32
 						<i class="fa fa-w fa-trash"></i>
 					</button>
 				</td>
 			</tr>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	</tr>
@@ -186,6 +208,9 @@
 =======
 	
 >>>>>>> tokap 30-31
+=======
+	
+>>>>>>> tokap 32
 	@endforeach
 </table>
 
@@ -193,6 +218,7 @@
 	$data->appends( request()->only('keyword') )
 	->links('vendor.pagination.bootstrap-4')
 }}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -218,6 +244,8 @@
 =======
 =======
 >>>>>>> tokap 30-31
+=======
+>>>>>>> tokap 32
 @endsection
 
 @push('modal')
@@ -267,8 +295,12 @@
 </script>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @endpush
 >>>>>>> tokap 28-29
 =======
 @endpush
 >>>>>>> tokap 30-31
+=======
+@endpush
+>>>>>>> tokap 32

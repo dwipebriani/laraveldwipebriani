@@ -75,6 +75,7 @@ class Kernel extends HttpKernel
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         'akses.admin'=>\App\Http\Middleware\AksesAdmin::class,
 >>>>>>> tokap11
@@ -132,5 +133,8 @@ class Kernel extends HttpKernel
 =======
         'akses.admin'=>\App\Http\Middleware\AksesAdmin::class,
 >>>>>>> tokap 30-31
+=======
+        'akses.admin'=>\App\Http\Middleware\AksesAdmin::class,
+>>>>>>> tokap 32
     ];
 }

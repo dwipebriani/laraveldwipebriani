@@ -19,6 +19,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="row">
 	<div class="col-md-6 mb-3">
 <<<<<<< HEAD
@@ -61,6 +62,8 @@
 >>>>>>> tokap 28-29
 =======
 >>>>>>> tokap 30-31
+=======
+>>>>>>> tokap 32
 
 @if(session('result') == 'success')
 <div class="alert alert-success alert-dismissible fade show">
@@ -71,6 +74,7 @@
 </div>
 @endif
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -109,6 +113,8 @@
 >>>>>>> tokap 28-29
 =======
 >>>>>>> tokap 30-31
+=======
+>>>>>>> tokap 32
 @if(session('result') == 'update')
 <div class="alert alert-success alert-dismissible fade show">
 	<strong>Update!</strong> Berhasil diupdate.
@@ -118,6 +124,7 @@
 </div>
 @endif
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -154,6 +161,8 @@
 >>>>>>> tokap 28-29
 =======
 >>>>>>> tokap 30-31
+=======
+>>>>>>> tokap 32
 @if(session('result') == 'delete')
 <div class="alert alert-success alert-dismissible fade show">
 	<strong>Delete!</strong> Berhasil dihapus.
@@ -166,6 +175,7 @@
 @if(session('result') == 'fail-delete')
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="alert alert-danger alert-dismissible fade show">
 =======
 <div class="alert alert-success alert-dismissible fade show">
@@ -173,6 +183,9 @@
 =======
 <div class="alert alert-success alert-dismissible fade show">
 >>>>>>> tokap 30-31
+=======
+<div class="alert alert-success alert-dismissible fade show">
+>>>>>>> tokap 32
 	<strong>Failde!</strong> Gagal dihapus.
 	<button type="button" class="close" data-dismiss="alert">
 		&times;
@@ -180,6 +193,7 @@
 </div>
 @endif
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -211,10 +225,13 @@
 >>>>>>> tokap 28-29
 =======
 >>>>>>> tokap 30-31
+=======
+>>>>>>> tokap 32
 
 <div class="row">
 	<div class="col-md-6 mb-3">
 		<a href="{{ route('admin.user.add') }}" class="btn btn-primary">[+] Tambah</a>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -261,6 +278,8 @@
 >>>>>>> tokap 28-29
 =======
 >>>>>>> tokap 30-31
+=======
+>>>>>>> tokap 32
 	</div>
 
 	<div class="col-md-6 mb-3">
@@ -282,6 +301,7 @@
 
 <table class="table table-striped mb-3">
 	<tr>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -359,11 +379,15 @@
 =======
 		<th>Name</th><th>Email</th><th>Akses</th><th>&nbsp;</th>
 >>>>>>> tokap 30-31
+=======
+		<th>Name</th><th>Email</th><th>Akses</th><th>&nbsp;</th>
+>>>>>>> tokap 32
 	</tr>
 	@foreach($data as $dt)
 	<tr>
 			<td>{{ $dt->name }}</td>
 			<td>{{ $dt->email }}</td>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -475,6 +499,8 @@
 =======
 =======
 >>>>>>> tokap 30-31
+=======
+>>>>>>> tokap 32
 			<td>{{ $dt->akses }}</td>
 			<td>
 				<a href="{{ route('admin.user.edit',['id'=>$dt->id]) }}"
@@ -487,9 +513,12 @@
 				data-id="{{$dt->id }}"
 				type="button">
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap 28-29
 =======
 >>>>>>> tokap 30-31
+=======
+>>>>>>> tokap 32
 					<i class="fa fa-w fa-trash"></i>
 				</button>
 				@endif
@@ -502,6 +531,7 @@
 		$data->appends( request()->only('keyword') )
 		->links('vendor.pagination.bootstrap-4')
 }}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -542,6 +572,9 @@
 =======
 @endsection
 >>>>>>> tokap 30-31
+=======
+@endsection
+>>>>>>> tokap 32
 @push('modal')
 <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog">
 	<div class="modal-dialog" role="document">
@@ -556,6 +589,7 @@
 
 			<div class="modal-body">
 				Apakah anda yakin ingin menghapusnya?
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -601,6 +635,9 @@
 =======
 				<form id="form-delete" method="post" action="{{ route('admin.user') }}">
 >>>>>>> tokap 30-31
+=======
+				<form id="form-delete" method="post" action="{{ route('admin.user') }}">
+>>>>>>> tokap 32
 					{{ csrf_field() }}
 					{{ method_field('delete') }}
 					<input type="hidden" name="id" id="input-id">
@@ -627,6 +664,7 @@
 		});
 
 		$('.btn-delete').click(function(){
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -672,10 +710,14 @@
 =======
 			$('#form-delete').submit();
 >>>>>>> tokap 30-31
+=======
+			$('#form-delete').submit();
+>>>>>>> tokap 32
 		});
 	})
 </script>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -722,3 +764,6 @@
 =======
 @endpush
 >>>>>>> tokap 30-31
+=======
+@endpush
+>>>>>>> tokap 32
