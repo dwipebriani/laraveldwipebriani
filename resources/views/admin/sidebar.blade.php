@@ -24,6 +24,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 
@@ -97,12 +98,17 @@
 
         @if(Auth::user()->akses == 'admin')
 >>>>>>> tokap 28-29
+=======
+
+        @if(Auth::user()->akses == 'admin')
+>>>>>>> tokap 30-31
           <li class="nav-item">
           <a class="nav-link" href="{{route('admin.user')}}">
             <i class="fas fa-fw fa-users"></i>
             <span>User</span>
           </a>
         </li>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -167,6 +173,8 @@
 >>>>>>> tokap27
 =======
 >>>>>>> tokap 28-29
+=======
+>>>>>>> tokap 30-31
 
         <li class="nav-item">
           <a class="nav-link" href="{{route('admin.kategori')}}">
@@ -174,6 +182,7 @@
             <span>Kategori</span>
           </a>
         </li>
+<<<<<<< HEAD
       @endif
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -200,4 +209,14 @@
 >>>>>>> tokap27
 =======
 >>>>>>> tokap 28-29
+=======
+
+         <li class="nav-item">
+          <a class="nav-link" href="{{route('admin.produk')}}">
+            <i class="fas fa-fw fa-cube"></i>
+            <span>Produk</span>
+          </a>
+        </li>
+      @endif
+>>>>>>> tokap 30-31
       </ul>

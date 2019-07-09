@@ -79,6 +79,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             document.getElementById('logout-form').submit();">
 
 =======
@@ -129,6 +130,8 @@
 >>>>>>> tokap27
 =======
 >>>>>>> tokap 28-29
+=======
+>>>>>>> tokap 30-31
                                                      document.getElementById('logout-form').submit();">
                                             Logout
                                         </a>

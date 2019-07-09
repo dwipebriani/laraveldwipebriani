@@ -19,6 +19,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> tokap15
@@ -48,6 +49,8 @@
 >>>>>>> tokap27
 =======
 >>>>>>> tokap 28-29
+=======
+>>>>>>> tokap 30-31
 @if(session('result') == 'fail')
 <div class="alert alert-danger alert-dismissible fade show">
 	<strong>Failed!</strong> Gagal disimpan.
@@ -57,6 +60,7 @@
 </div>
 @endif
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -100,6 +104,8 @@
 >>>>>>> tokap27
 =======
 >>>>>>> tokap 28-29
+=======
+>>>>>>> tokap 30-31
 <div class="row">
 	<div class="col-md-6">
 		<form method="POST" action="{{ route('admin.user.add') }}">
@@ -128,6 +134,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 						class="form-control"
 						value="{{ old('name') }}"
 						id="iName" placeholder="Name" required>
@@ -163,6 +170,8 @@
 >>>>>>> tokap27
 =======
 >>>>>>> tokap 28-29
+=======
+>>>>>>> tokap 30-31
 						class="form-control {{ $errors->has('name')?'is-invalid':''  }}"
 						value="{{ old('name') }}"
 						id="iName" placeholder="Name" required>
@@ -185,6 +194,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap13
 =======
 >>>>>>> tokap14
@@ -216,12 +226,15 @@
 >>>>>>> tokap27
 =======
 >>>>>>> tokap 28-29
+=======
+>>>>>>> tokap 30-31
 					</div><!-- End Form Group-->
 
 
 
 					<div class="form-group form-label-group">
 						<input type="email" name="email"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -273,6 +286,8 @@
 >>>>>>> tokap27
 =======
 >>>>>>> tokap 28-29
+=======
+>>>>>>> tokap 30-31
 						class="form-control {{ $errors->has('name')?'is-invalid':''  }}"
 						value="{{ old('email') }}"
 						id="iEmail" placeholder="Email" required>
@@ -280,6 +295,7 @@
 						@if($errors->has('email'))
 						<div class="invalid-feedback">{{ $errors->first('email') }}</div>
 						@endif
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -326,11 +342,14 @@
 >>>>>>> tokap27
 =======
 >>>>>>> tokap 28-29
+=======
+>>>>>>> tokap 30-31
 					</div><!-- End Form Group-->
 
 
 					<div class="form-group form-label-group">
 						<input type="password" name="password"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -382,6 +401,8 @@
 >>>>>>> tokap27
 =======
 >>>>>>> tokap 28-29
+=======
+>>>>>>> tokap 30-31
 						class="form-control {{ $errors->has('password')?'is-invalid':''  }}"
 						
 						id="iPassword" placeholder="Password" required>
@@ -389,6 +410,7 @@
 						@if($errors->has('password'))
 						<div class="invalid-feedback">{{ $errors->first('password') }}</div>
 						@endif
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -435,11 +457,14 @@
 >>>>>>> tokap27
 =======
 >>>>>>> tokap 28-29
+=======
+>>>>>>> tokap 30-31
 					</div><!-- End Form Group-->
 
 
 					<div class="form-group form-label-group">
 						<input type="password" name="repassword"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -502,6 +527,8 @@
 >>>>>>> tokap27
 =======
 >>>>>>> tokap 28-29
+=======
+>>>>>>> tokap 30-31
 						class="form-control {{ $errors->has('repassword')?'is-invalid':''  }}"
 						id="iRePassword" placeholder="Re Password" required>
 						<label for="iRePassword">Re Password</label>
@@ -524,6 +551,7 @@
 						@if($errors->has('akses'))
 						<div class="invalid-feedback">{{ $errors->first('akses') }}</div>
 						@endif
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -570,6 +598,8 @@
 >>>>>>> tokap27
 =======
 >>>>>>> tokap 28-29
+=======
+>>>>>>> tokap 30-31
 						</div><!-- End Form Group-->
 
 				</div><!-- End Card Body-->
