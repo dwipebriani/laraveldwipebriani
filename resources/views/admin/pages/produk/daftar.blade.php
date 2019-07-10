@@ -4,13 +4,20 @@
 <h1>Produk</h1>
 <hr>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> tokap 33
 
 <!-- Baris Tambah dan Pencarian -->
 <div class="row">
 	<!-- Tombol Tambah -->
 	<div class="col-md-6 mb-3">
+<<<<<<< HEAD
 		<a href="#" class="btn btn-primary">[+] Tambah</a>
+=======
+		<a href="{{ route('admin.produk.add') }}" class="btn btn-primary">[+] Tambah</a>
+>>>>>>> tokap 33
 	</div>
 
 	<!-- Formulir Pencarian -->
@@ -87,5 +94,8 @@
 	->links('vendor.pagination.bootstrap-4')
 
 }}
+<<<<<<< HEAD
 >>>>>>> tokap 32
+=======
+>>>>>>> tokap 33
 @endsection
