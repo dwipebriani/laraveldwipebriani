@@ -38,6 +38,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 3feb4755e00a71ed519f45f297a511300eb28101
@@ -95,6 +96,8 @@
 >>>>>>> tokap 32
 =======
 >>>>>>> tokap 33
+=======
+>>>>>>> tokap 35
       <!-- Navbar -->
       <ul class="navbar-nav ml-auto ml-md-0">
 
@@ -102,6 +105,7 @@
         <li class="nav-item dropdown no-arrow">
           <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-user-circle fa-fw"></i>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -191,10 +195,13 @@
 >>>>>>> tokap 32
 =======
 >>>>>>> tokap 33
+=======
+>>>>>>> tokap 35
             {{Auth::user()->name}}
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
             <a class="dropdown-item" href="{{ route('admin.user.setting') }}">Settings</a>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -271,6 +278,8 @@
 >>>>>>> tokap 32
 =======
 >>>>>>> tokap 33
+=======
+>>>>>>> tokap 35
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
           </div>
@@ -291,6 +300,7 @@
           <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -373,12 +383,15 @@
 >>>>>>> tokap 32
 =======
 >>>>>>> tokap 33
+=======
+>>>>>>> tokap 35
             <a class="btn btn-primary" href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">Logout</a>
 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -464,6 +477,8 @@
 >>>>>>> tokap 32
 =======
 >>>>>>> tokap 33
+=======
+>>>>>>> tokap 35
           </div>
         </div>
       </div>
