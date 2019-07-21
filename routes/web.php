@@ -44,6 +44,7 @@ Route::get('/', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Route::group(['middleware'=>['auth']], function(){
 =======
 >>>>>>> 3feb4755e00a71ed519f45f297a511300eb28101
@@ -203,6 +204,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 >>>>>>> tokap 33
 =======
 >>>>>>> tokap 35
+=======
+>>>>>>> tokap 36
 Route::group(['prefix'=>'admin','middleware'=>['auth']], function(){
 	
 
@@ -212,6 +215,7 @@ Route::group(['prefix'=>'admin','middleware'=>['auth']], function(){
 
 
 	/*User*/ 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -249,10 +253,13 @@ Route::group(['prefix'=>'admin','middleware'=>['auth']], function(){
 >>>>>>> tokap 33
 =======
 >>>>>>> tokap 35
+=======
+>>>>>>> tokap 36
 	Route::prefix('user')->group(function() {
 
 		Route::get('/','UserController@daftar')->name('admin.user')->middleware('akses.admin');
 		Route::delete('/','UserController@delete')->middleware('akses.admin');
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -293,10 +300,13 @@ Route::group(['prefix'=>'admin','middleware'=>['auth']], function(){
 >>>>>>> tokap 33
 =======
 >>>>>>> tokap 35
+=======
+>>>>>>> tokap 36
 
 		route::get('/add','UserController@add')->name('admin.user.add')->middleware('akses.admin');
 		route::post('/add','UserController@save')->middleware('akses.admin');
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -387,11 +397,16 @@ Route::group(['prefix'=>'admin','middleware'=>['auth']], function(){
 		route::get('/edit/{id}','UserController@edit')->name('admin.user.edit')->middleware('akses.admin');
 		route::post('/edit/{id}','UserController@update')->middleware('akses.admin');
 >>>>>>> tokap 35
+=======
+		route::get('/edit/{id}','UserController@edit')->name('admin.user.edit')->middleware('akses.admin');
+		route::post('/edit/{id}','UserController@update')->middleware('akses.admin');
+>>>>>>> tokap 36
 
 
 
 		Route::get('/setting','UserSettingController@form')->name('admin.user.setting');
 		Route::post('/setting','UserSettingController@update');
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -512,10 +527,13 @@ Route::any('register', function(){ return abort(404); });
 >>>>>>> tokap 33
 =======
 >>>>>>> tokap 35
+=======
+>>>>>>> tokap 36
 	});
 
 /* kategori */
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -587,6 +605,11 @@ Route::group(['prefix'=>'Kategori','middleware'=>'akses.admin'], function() {
 	Route::get('/','KategoriController@daftar')->name('admin.kategori');
 	Route::delete('/','KategoriController@delete');
 >>>>>>> tokap 35
+=======
+Route::group(['prefix'=>'Kategori','middleware'=>'akses.admin'], function() {
+	Route::get('/','KategoriController@daftar')->name('admin.kategori');
+	Route::delete('/','KategoriController@delete');
+>>>>>>> tokap 36
 
 
 		Route::get('/add','KategoriController@add')->name('admin.kategori.add');
@@ -596,6 +619,7 @@ Route::group(['prefix'=>'Kategori','middleware'=>'akses.admin'], function() {
 			Route::post('/edit/{id}','KategoriController@update');
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -611,12 +635,15 @@ Route::group(['prefix'=>'Kategori','middleware'=>'akses.admin'], function() {
 >>>>>>> tokap 33
 =======
 >>>>>>> tokap 35
+=======
+>>>>>>> tokap 36
 
 });
 
 /* Produk */
 Route::group(['prefix'=>'produk','middleware'=>'akses.admin'], function(){
 	Route::get('/','ProdukController@daftar')->name('admin.produk');
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 });
@@ -628,20 +655,26 @@ Route::group(['prefix'=>'produk','middleware'=>'akses.admin'], function(){
 =======
 =======
 >>>>>>> tokap 35
+=======
+>>>>>>> tokap 36
 	Route::get('/add','ProdukController@add')->name('admin.produk.add');
 	Route::post('/add','ProdukController@save');
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap 33
 =======
 >>>>>>> tokap 35
+=======
+>>>>>>> tokap 36
 });
 
 Auth::routes();
 
 Route::any('register', function(){ return abort(404); });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -679,3 +712,5 @@ Route::any('register', function(){ return abort(404); });
 >>>>>>> tokap 33
 =======
 >>>>>>> tokap 35
+=======
+>>>>>>> tokap 36
