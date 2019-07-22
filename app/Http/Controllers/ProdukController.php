@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 class ProdukController extends Controller
 {
@@ -20,6 +21,8 @@ class ProdukController extends Controller
 >>>>>>> tokap 35
 =======
 >>>>>>> tokap 36
+=======
+>>>>>>> tokap 37
 use App\Produk;
 
 class ProdukController extends Controller
@@ -37,6 +40,7 @@ class ProdukController extends Controller
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap 32
     }
 }
@@ -45,6 +49,8 @@ class ProdukController extends Controller
 >>>>>>> tokap 35
 =======
 >>>>>>> tokap 36
+=======
+>>>>>>> tokap 37
     }
 
     /*Fungsi add/Tambah */
@@ -59,6 +65,7 @@ return view('admin.pages.produk.add');
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         return 'Fungsi Save';
     }
 
@@ -67,6 +74,8 @@ return view('admin.pages.produk.add');
 =======
 =======
 >>>>>>> tokap 36
+=======
+>>>>>>> tokap 37
 
         \Validator::make($req->all(),[
             'kode'=>'required|between:3,100|unique:produk,kode_produk',
@@ -81,12 +90,15 @@ return view('admin.pages.produk.add');
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return 'Fungsi Save';
     }
 
 }
 >>>>>>> tokap 35
 =======
+=======
+>>>>>>> tokap 37
        /* Ganti nama file */
        $filename = rand(1,999).'_'.str_replace(' ', '', $req->gambar->getClientOriginalName());
 
@@ -101,12 +113,32 @@ return view('admin.pages.produk.add');
          $result->stok = $req->stok;
           $result->gambar_produk = $filename;
 
+<<<<<<< HEAD
           if ($result->save()) {
               return redirect()->route('admin.produk')->with('result','success');
           }else{
+=======
+          if ($result->save()){
+              return redirect()->route('admin.produk')->with('result','success');
+          } else {
+>>>>>>> tokap 37
             return back()->with('result','fail')->withInput();
           }
     }
 
+<<<<<<< HEAD
 }
 >>>>>>> tokap 36
+=======
+    public function edit($id)
+    {
+        $data = Produk::find($id);
+        return view('admin.pages.produk.edit',['rc'=>$data]);
+    }
+    public function update(Request $req)
+    {
+        return 'Fungsi Update';
+    }
+
+}
+>>>>>>> tokap 37

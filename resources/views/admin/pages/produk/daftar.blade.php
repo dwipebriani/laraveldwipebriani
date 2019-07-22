@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> tokap 33
@@ -14,11 +15,23 @@
 >>>>>>> tokap 35
 =======
 >>>>>>> tokap 36
+=======
+
+<!-- Alert jika berhasil disimpan -->
+@if(session('result') == 'success')
+<div class="alert alert-success alert-dismissible fade show">
+	<strong>Saved!</strong> Berhasil disimpan
+	<button type="button" class="close" data-dismiss="alert">
+		&times;
+	</button>
+</div>
+>>>>>>> tokap 37
 
 <!-- Baris Tambah dan Pencarian -->
 <div class="row">
 	<!-- Tombol Tambah -->
 	<div class="col-md-6 mb-3">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -32,6 +45,9 @@
 =======
 		<a href="{{ route('admin.produk.add') }}" class="btn btn-primary">[+] Tambah</a>
 >>>>>>> tokap 36
+=======
+		<a href="{{ route('admin.produk.add') }}" class="btn btn-primary">[+] Tambah</a>
+>>>>>>> tokap 37
 	</div>
 
 	<!-- Formulir Pencarian -->
@@ -48,6 +64,10 @@
 			</div><!-- End input group -->
 		</form>
 	</div>
+<<<<<<< HEAD
+=======
+	@endif
+>>>>>>> tokap 37
 	
 </div><!-- End Row -->
 
@@ -77,7 +97,11 @@
 		<!-- Kolom Tombol -->
 		<td>
 			<!-- Tombol Edit -->
+<<<<<<< HEAD
 			<a href="#"
+=======
+			<a href="{{ route('admin.produk.edit',['id'=>$dt->id]) }}"
+>>>>>>> tokap 37
 			class="btn btn-success btn-sm">
 			<i class="fa fa-w fa-edit"></i>
 	
@@ -111,6 +135,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap 32
 =======
 >>>>>>> tokap 33
@@ -118,4 +143,6 @@
 >>>>>>> tokap 35
 =======
 >>>>>>> tokap 36
+=======
+>>>>>>> tokap 37
 @endsection

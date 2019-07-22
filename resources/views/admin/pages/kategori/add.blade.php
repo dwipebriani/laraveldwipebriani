@@ -14,6 +14,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> tokap25
@@ -33,6 +34,8 @@
 >>>>>>> tokap 35
 =======
 >>>>>>> tokap 36
+=======
+>>>>>>> tokap 37
 @if( session('result') == 'fail' )
 <div class=" alert alert-danger alert-dismissible fade show">
 	<strong>Faild !</strong> Gagal disimpan.
@@ -42,6 +45,7 @@
 </div>
 @endif
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -70,6 +74,8 @@
 >>>>>>> tokap 35
 =======
 >>>>>>> tokap 36
+=======
+>>>>>>> tokap 37
 <div class="row">
 	<div class="col-md-6 mb-3">
 		<form method="POST" action="{{ route('admin.kategori.add') }}">
@@ -84,6 +90,7 @@
 			<div class="card-body">
 				<div class="form-group form-label-group">
 					<input type="text" name="kategori"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -120,6 +127,8 @@
 >>>>>>> tokap 35
 =======
 >>>>>>> tokap 36
+=======
+>>>>>>> tokap 37
 					class="form-control {{ $errors->has('kategori')?'is-invalid':'' }}"
 					value="{{ old('kategori') }}"
 					id="iKategori" placeholder="Kategori" required>
@@ -127,6 +136,7 @@
 					@if( $errors->has('kategori') )
 					<div class="invalid-feedback">{{ $errors->first('kategori') }}</div>
 					@endif
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -158,12 +168,15 @@
 >>>>>>> tokap 35
 =======
 >>>>>>> tokap 36
+=======
+>>>>>>> tokap 37
 				</div><!-- End Form Group -->
 			</div><!-- End Card Body -->
 
 
 			<div class="card-footer">
 			<button class="btn btn-primary" type="submit">Simpan</button>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -209,6 +222,9 @@
 =======
 		</div><!--End Card Footer-->
 >>>>>>> tokap 36
+=======
+		</div><!--End Card Footer-->
+>>>>>>> tokap 37
 
 		</div><!--End Card --> 
 	</form>

@@ -20,6 +20,7 @@
 						<input type="file" name="gambar"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 						class="form-control"
 						accept="image/*"
 						id="iGambar" placeholder="Gambar Produk" required>
@@ -27,6 +28,8 @@
 =======
 =======
 >>>>>>> tokap 36
+=======
+>>>>>>> tokap 37
 						class="form-control {{$errors->has('gambar')?'is-invalid':''}}"
 						accept="image/*"
 						id="iGambar" placeholder="Gambar Produk" required>
@@ -35,15 +38,19 @@
 						<div class="invalid-feedback">{{$errors->first('gambar')}}</div>
 						@endif
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap 35
 =======
 >>>>>>> tokap 36
+=======
+>>>>>>> tokap 37
 					</div>
 
 
 					<!-- Input kode produk -->
 					<div class="form-group form-label-group">
 						<input type="text" name="kode"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 						class="form-control"
@@ -53,6 +60,8 @@
 =======
 =======
 >>>>>>> tokap 36
+=======
+>>>>>>> tokap 37
 						class="form-control {{$errors->has('kode')?'is-invalid':''}}"
 						value="{{ old('kode') }}"
 						id="iKode" placeholder="Kode Produk" required>
@@ -61,14 +70,18 @@
 						<div class="invalid-feedback">{{$errors->first('kode')}}</div>
 						@endif
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap 35
 =======
 >>>>>>> tokap 36
+=======
+>>>>>>> tokap 37
 					</div>
 
 					<!-- Input nama produk -->
 					<div class="form-group form-label-group">
 						<input type="text" name="nama_produk"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 						class="form-control"
@@ -78,6 +91,8 @@
 =======
 =======
 >>>>>>> tokap 36
+=======
+>>>>>>> tokap 37
 						class="form-control {{$errors->has('nama_produk')?'is-invalid':''}}"
 						value="{{ old('nama_produk') }}"
 						id="iNamaProduk" placeholder="Nama Produk" required>
@@ -87,14 +102,18 @@
 						@endif
 						
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap 35
 =======
 >>>>>>> tokap 36
+=======
+>>>>>>> tokap 37
 					</div>
 
 					<!-- Input harga -->
 					<div class="form-group form-label-group">
 						<input type="number" name="harga"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 						class="form-control"
@@ -104,6 +123,8 @@
 =======
 =======
 >>>>>>> tokap 36
+=======
+>>>>>>> tokap 37
 						class="form-control {{$errors->has('harga')?'is-invalid':''}}"
 						value="{{ old('harga') }}"
 						id="iHarga" placeholder="Harga" required>
@@ -112,14 +133,18 @@
 						<div class="invalid-feedback">{{$errors->first('harga')}}</div>
 						@endif
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap 35
 =======
 >>>>>>> tokap 36
+=======
+>>>>>>> tokap 37
 					</div>
 
 					<!-- Input stok -->
 					<div class="form-group form-label-group">
 						<input type="number" name="stok"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 						class="form-control"
@@ -129,6 +154,8 @@
 =======
 =======
 >>>>>>> tokap 36
+=======
+>>>>>>> tokap 37
 						class="form-control {{$errors->has('stok')?'is-invalid':''}}"
 						value="{{ old('stok') }}"
 						id="iStok" placeholder="Stok" required>
@@ -137,14 +164,18 @@
 						<div class="invalid-feedback">{{$errors->first('stok')}}</div>
 						@endif
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap 35
 =======
 >>>>>>> tokap 36
+=======
+>>>>>>> tokap 37
 					</div>
 
 					<!-- Input kategori -->
 					<div class="form-group">
 						<select name="kategori"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 						class="form-control"
@@ -155,6 +186,8 @@
 =======
 =======
 >>>>>>> tokap 36
+=======
+>>>>>>> tokap 37
 						class="form-control {{$errors->has('kategori')?'is-invalid':''}}"
 						required> 
 
@@ -165,15 +198,19 @@
 						@foreach(\App\Kategori::orderBy('nama_kategori','asc')->get() as $d)
 						<option value="{{ $d->id }}" {{$val==$d->id?'selected':''}}>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> tokap 35
 =======
 >>>>>>> tokap 36
+=======
+>>>>>>> tokap 37
 							{{ $d->nama_kategori }}
 						</option>
 						@endforeach
 					</select>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 					@if($errors->has('kategori'))
 						<div class="invalid-feedback">{{$errors->first('kategori')}}</div>
@@ -184,6 +221,11 @@
 						<div class="invalid-feedback">{{$errors->first('kategori')}}</div>
 						@endif
 >>>>>>> tokap 36
+=======
+					@if($errors->has('kategori'))
+						<div class="invalid-feedback">{{$errors->first('kategori')}}</div>
+						@endif
+>>>>>>> tokap 37
 					</div>
 
 
